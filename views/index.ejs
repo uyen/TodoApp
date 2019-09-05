@@ -1,0 +1,31 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/jquery-3.4.1.js"></script>
+  <script src="assets/todo.js"></script>
+</head>
+
+<body>
+	<form>
+	    <input type="text" name="txttask" required placeHolder="Task name" style="width:60%; margin-right:10px;background-color:#fff;"/>
+	    <button>Submit</button>
+	</form>
+	
+	<br />
+	 
+	<br />
+
+
+	<ol class="tasklist" type="1">
+	<%- include('tasklist', {datas: datas}); %>
+	</ol>
+</body>
+</html>
